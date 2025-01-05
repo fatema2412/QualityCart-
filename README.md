@@ -64,6 +64,10 @@ To run the project:
 
 ---
 
+### Links
+[Backend Link: QualityCart API](https://understood-steel-touch.glitch.me/)
+
+
 ## Future Improvements
 
 - Further enhancement of responsiveness for mobile devices.
