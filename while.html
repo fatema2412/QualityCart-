@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/whilesupp.css">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <nav>
+        <a href="while.html">Shop Now</a>
+        <a href="membership.html">Get Email Offers</a>
+        <a href="customersupp.html">Customer Service</a>
+
+  <select> 
+    <option> Select Country/Region </option>
+     <option>Japan</option>
+     <option>Canada</option>
+     <option>Mexico</option>
+     <option>France</option>
+     <option>Sweden</option>
+     </select>
+    </nav>
+    <div id="tlogo">
+    <!-- Logo Section -->
+    <div id="logo">
+    <h2>QualityCart</h2>
+    <h4 style="margin-top: -5%;">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 5px;">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+    </div>
+    <span class="wholesale">Wholesale</span>
+
+    </h4> </div>
+    <!-- Search Input -->
+    <input placeholder="Search QualityCart" type="text" id="search-input">
+    <span class="search-icon">🔍</span>
+    <a href="signin.html">Sign In/ Register </a>
+    <span class="vert-line"></span>
+     <a href="order&return.html">Order & Return </a>
+    <span class="vert-line"></span>
+    <a href="cart.html" id="cart-link">
+      <span id="cart-icon">🛒</span>
+      <span>Cart</span>
+      <span id="cart-count">(0)</span>
+    </a>
+    </div>
+    <div class="menu-bar">
+        <div class="menu-item">
+            <a href="#">Shop</a>
+            <div class="dropdown">
+                <a href="while.html">Appliances</a>
+                <a href="while.html">Baby</a>
+                <a href="while.html">Beauty</a>
+                <a href="while.html">Special Event</a>
+                <a href="while.html">Jewelry</a>
+            </div>
+        </div>
+    
+    
+        <div class="menu-item">
+            <a href="#">Travel</a>
+            <div class="dropdown">
+                <div class="dropdown-content">
+                    <img src="https://mobilecontent.costco.com/live/resource/img/20241230_trv_espot/20241230_French_Riviera_Com_eSpot.jpg" alt="Travel">
+                    <h2>QualityCart Travel</h2>
+                    <p>QualityCart Travel sells exclusively to QualityCart members. We use our buying authority to negotiate the best value in the marketplace, and then pass on the savings to QualityCart members.</p>
+                    <a href="while.html">Shop Travel</a>
+                    <a href="while.html">Vacation Packages</a>
+                    <a href="while.html">Cruises</a>
+                    <a href="while.html">Rental Cars</a>
+                    <a href="while.html">Hotels</a>
+                    <button id="explore-travel">Explore QualityCart.com</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="menu-item">
+            <a href="#">Location</a>
+            <div class="dropdown">
+                <a href="#">Location & Services</a>
+                <select id="warehouse-select">
+                    <option selected disabled>Find Warehouse</option>
+                </select>
+                <a href="#">Location Coming Soon</a>
+                <a href="#">Hours and Holiday Closures</a>
+                <a href="#">Gasoline</a>
+            </div>
+        </div>
+    
+        <div class="menu-item">
+            <a href="membership.html">Membership</a>
+            <div class="dropdown">
+                <select id="membership-select">
+                    <option selected disabled>Join Today</option>
+                </select>
+                <a href="membership.html">Renew Membership</a>
+                <a href="membership.html">Upgrade to Executive</a>
+                <a href="membership.html">Why Become a Member</a>
+                <a href="membership.html">Credit Card</a>
+                <img src="https://cdn.bfldr.com/56O3HXZ9/at/68kjpzvpq76fgrgcpgwkj7/d_25w05087_homapage_hero_southwest.jpg?auto=webp&format=jpg" alt="Membership">
+            </div>
+        </div>
+    
+        <div class="menu-item">
+            <a href="while.html">Optical</a>
+            <div class="dropdown">
+                <select id="optical-select">
+                    <option selected disabled>Shop Optical</option>
+                </select>
+                <div>
+                    <a href="while.html">Sunglasses</a>
+                    <a href="while.html">Healthy Eyes</a>
+                    <a href="while.html">Contact Lenses</a>
+                    <a href="while.html">Eyeglasses - New</a>
+                    <a href="while.html">Reading Glasses</a>
+                </div>
+                <img src="https://cdn.bfldr.com/56O3HXZ9/at/qkk7hgg46w67stq685qmx9b/optical-lenses.jpg?auto=webp&format=jpg" alt="Optical">
+            </div>
+        </div>
+    
+        <div class="menu-item">
+            <a href="while.html">Sameday</a>
+            <div class="dropdown" style="margin-left: -95%;">
+                <h3>Quickest Delivery Same Day in Most Areas</h3>
+                <p>Prices and availability will vary.</p>
+                <button id="shop-sameday">Shop Same Day Now</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="pictureimg">
+        <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/Top_banner_asset_1200X200_ca56302f-fe77-4c56-aa8d-6f7ad2580832.jpg?v=1721945318" alt="img">
+    </div>
+    <div style="display: flex; height: 1000px; width: 100%;">
+        <div class="listitem" style="width: 20%; flex: none;">
+            <!-- Category Filter -->
+            <div class="cont">
+                <div class="select-item" onclick="toggleDropdown('category-dropdown')">Category </div>
+                <hr class="category-separator" style="width: 80%; border: 1px solid rgb(212, 212, 210); margin:15px 0px 0px;">
+
+                <div id="category-dropdown" class="dropdown-options">
+                    <select id="filter">
+                        <option value="">Select All</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="furniture">Furniture</option>
+                        <option value="appliances">Appliances</option>
+                        <option value="clothing">Clothing</option>
+                    </select>
+                </div>
+            </div>
+    
+            <!-- Price Sort Filter -->
+            <div class="cont">
+                <div class="select-item" onclick="toggleDropdown('price-dropdown')">Sort by Price </div>
+                <hr class="category-separator" style="width: 80%; border: 1px solid rgb(212, 212, 210); margin:15px 0px 0px;">
+
+                <div id="price-dropdown" class="dropdown-options">
+                    <select id="SortbyPrice">
+                        <option value="">Sort by Price</option>
+                        <option value="lth">Low to High</option>
+                        <option value="htl">High to Low</option>
+                    </select>
+                </div>
+            </div>
+    
+            <!-- Alphabetical Sort Filter -->
+            <div class="cont">
+                <div class="select-item" onclick="toggleDropdown('alphabetical-dropdown')">Sort Alphabetically </div>
+                <hr class="category-separator" style="width: 80%; border: 1px solid rgb(212, 212, 210); margin:15px 0px 0px;">
+
+                <div id="alphabetical-dropdown" class="dropdown-options">
+                    <select id="SortbyAlba">
+                        <option value="">Sort Alphabetically</option>
+                        <option value="one">A-Z</option>
+                        <option value="two">Z-A</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div id="product-container"></div>
+        
+    </div>
+    <div id="pagination">
+      </div>
+      <div class="footer">
+        <div class="footer-top">
+          <div class="customer-service">
+            <h3>Customer Service</h3>
+            <a href="customersupp.html">Get Help</a>
+          </div>
+          <div class="find-warehouse">
+            <h3>Find a Warehouse</h3>
+            <input type="text" placeholder="City, State or Zip" />
+            <button>Search</button>
+          </div>
+          <div class="email-offers">
+            <h3>Get Email Offers</h3>
+            <input type="email" placeholder="Enter your email" />
+            <button>Go</button>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="column">
+            <h4>About Us</h4>
+            <ul>
+              <li><a href="customersupp.html">Get To Know QualityCart</a></li>
+              <li><a href="customersupp.html">Charitable Contributions</a></li>
+              <li><a href="customersupp.html">Company Information</a></li>
+              <li><a href="customersupp.html">Sustainability Commitment</a></li>
+              <li><a href="customersupp.html">Investor Relations</a></li>
+              <li><a href="customersupp.html">Careers</a></li>
+              <li><a href="customersupp.html">Kirkland Signature</a></li>
+              <li><a href="customersupp.html">Logo and Media Requests</a></li>
+              <li><a href="customersupp.html">The QualityCart Connection</a></li>
+              <li><a href="customersupp.html">Quick & Easy Recipe Videos</a></li>
+              <li><a href="customersupp.html">Costco Blog</a></li>
+              <li><a href="customersupp.html">Employee Site</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h4>Membership</h4>
+            <ul>
+              <li><a href="membership.html">Membership Information</a></li>
+              <li><a href="membership.html">Join Now</a></li>
+              <li><a href="membership.html">Member Privileges</a></li>
+              <li><a href="membership.html">Executive Membership Terms</a></li>
+              <li><a href="membership.html">Sign In or Register</a></li>
+              <li><a href="membership.html">Credit Card</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h4>Customer Service</h4>
+            <ul>
+              <li><a href="customersupp.html">Costco Customer Service</a></li>
+              <li><a href="customersupp.html">Costco Shop Card Balance</a></li>
+              <li><a href="customersupp.html">Order By Item Number</a></li>
+              <li><a href="customersupp.html">Concierge Tech Support & Warranty</a></li>
+              <li><a href="customersupp.html">Volume Sales: Export & Domestic</a></li>
+              <li><a href="customersupp.html">Order Status</a></li>
+              <li><a href="customersupp.html">Preventing Fraud</a></li>
+              <li><a href="customersupp.html">Shipping</a></li>
+              <li><a href="customersupp.html">Recalls & Product Notices</a></li>
+              <li><a href="customersupp.html">Returns and Exchanges</a></li>
+              <li><a href="customersupp.html">Returns Policy</a></li>
+              <li><a href="customersupp.html">Accessibility</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h4>Locations & Services</h4>
+            <ul>
+              <li><a href="customersupp.html">Find a Warehouse</a></li>
+              <li><a href="customersupp.html">Locations Coming Soon</a></li>
+              <li><a href="customersupp.html">Hours and Holiday Closures</a></li>
+              <li><a href="customersupp.html">Gasoline</a></li>
+              <li><a href="customersupp.html">Hearing Aid Center</a></li>
+              <li><a href="customersupp.html">Optical</a></li>
+              <li><a href="customersupp.html">Special Events</a></li>
+              <li><a href="customersupp.html">CostcoGrocery</a></li>
+              <li><a href="customersupp.html">Grocery by Instacart</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-legal">
+            <div class="legal-links">
+              <a href="order&return.html">Site Map</a>
+              <a href="order&return.html">Terms and Conditions</a>
+              <a href="order&return.html">Your Privacy Rights</a>
+              <a href="order&return.html">CA Notice</a>
+              <a href="order&return.html">Cookie Settings</a>
+              <a href="order&return.html">Your Privacy Choices</a>
+              <a href="order&return.html">Consumer Health Data</a>
+              <a href="order&return.html">Feedback</a>
+            </div>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/"><img src="https://cdn-icons-png.flaticon.com/256/733/733547.png" alt="Facebook"></a>
+              <a href="https://in.pinterest.com/"><img src="https://cdn-icons-png.flaticon.com/128/145/145808.png" alt="Pinterest"></a>
+              <a href="https://www.instagram.com/'"><img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" alt="Instagram"></a>
+            </div>
+            <div class="copyright">
+              <p>© 1998 — 2024 Costco Wholesale Corporation. All rights reserved.</p>
+            </div>
+          </div>
+      </div>
+    
+      
+
+    
+    
+</body>
+</html>
+<script src="/script/while.js"></script>

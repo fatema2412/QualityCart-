@@ -1,0 +1,26 @@
+.thankdisplaydiv{
+    height: 400px;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    margin: auto;
+    padding-top: 30px;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+.ty{
+    font-size: 23px;
+    font-weight: lighter;
+    /* line-height: 100px; */
+}
+.continue{
+    width: 400px;
+    height: 50px;
+    background-color: rgb(160, 160, 236);
+    color: white;
+    position: cursor;
+    margin-top: 3%;
+    font-size: 15px;
+}

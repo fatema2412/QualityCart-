@@ -1,0 +1,15 @@
+.frmsp{
+    position: relative;
+    left: 190px;
+    letter-spacing: 0.5px;
+  font-size: 14px;
+  color: rgb(7, 7, 7);
+}
+.labelan{
+    text-decoration: none;
+    font-size: 20px;
+    display: grid;
+    text-align: center;
+    margin-top: 5%;
+    color: black;
+}

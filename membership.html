@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/membership.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div style="display: flex; align-items: center; gap: 20px;">
+        <!-- Logo Section -->
+        <div id="logo">
+        <h2>QualityCart</h2>
+        <h4 style="margin-top: -5%;">
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 5px;">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+        <span class="wholesale">Wholesale</span>
+    
+        </h4> </div>
+        <!-- Search Input -->
+        <input placeholder="Search QualityCart" type="text" id="search-input">
+        <span class="search-icon">🔍</span>
+        <a href="signin.html">Sign In/ Register </a>
+        <span class="vert-line"></span>
+         <a href="order&return.html">Order & Return </a>
+        <span class="vert-line"></span>
+        <a href="cart.html" id="cart-link">
+          <span id="cart-icon">🛒</span>
+          <span>Cart</span>
+          <span id="cart-count">(0)</span>
+        </a>
+        
+    
+       </div>
+    
+       <div class="menu-bar">
+        <div class="menu-item">
+            <a href="#">Shop</a>
+            <div class="dropdown">
+                <a href="while.html">Appliances</a>
+                <a href="while.html">Baby</a>
+                <a href="while.html">Beauty</a>
+                <a href="while.html">Special Event</a>
+                <a href="while.html">Jewelry</a>
+            </div>
+        </div>
+    
+    
+        <div class="menu-item">
+            <a href="#">Travel</a>
+            <div class="dropdown">
+                <div class="dropdown-content">
+                    <img src="https://mobilecontent.costco.com/live/resource/img/20241230_trv_espot/20241230_French_Riviera_Com_eSpot.jpg" alt="Travel">
+                    <h2>QualityCart Travel</h2>
+                    <p>QualityCart Travel sells exclusively to QualityCart members. We use our buying authority to negotiate the best value in the marketplace, and then pass on the savings to QualityCart members.</p>
+                    <a href="while.html">Shop Travel</a>
+                    <a href="while.html">Vacation Packages</a>
+                    <a href="while.html">Cruises</a>
+                    <a href="while.html">Rental Cars</a>
+                    <a href="while.html">Hotels</a>
+                    <button id="explore-travel">Explore QualityCart.com</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="menu-item">
+            <a href="#">Location</a>
+            <div class="dropdown">
+                <a href="#">Location & Services</a>
+                <select id="warehouse-select">
+                    <option selected disabled>Find Warehouse</option>
+                </select>
+                <a href="#">Location Coming Soon</a>
+                <a href="#">Hours and Holiday Closures</a>
+                <a href="#">Gasoline</a>
+            </div>
+        </div>
+    
+        <div class="menu-item">
+            <a href="membership.html">Membership</a>
+            <div class="dropdown">
+                <select id="membership-select">
+                    <option selected disabled>Join Today</option>
+                </select>
+                <a href="membership.html">Renew Membership</a>
+                <a href="membership.html">Upgrade to Executive</a>
+                <a href="membership.html">Why Become a Member</a>
+                <a href="membership.html">Credit Card</a>
+                <img src="https://cdn.bfldr.com/56O3HXZ9/at/68kjpzvpq76fgrgcpgwkj7/d_25w05087_homapage_hero_southwest.jpg?auto=webp&format=jpg" alt="Membership">
+            </div>
+        </div>
+    
+        <div class="menu-item">
+            <a href="while.html">Optical</a>
+            <div class="dropdown">
+                <select id="optical-select">
+                    <option selected disabled>Shop Optical</option>
+                </select>
+                <div>
+                    <a href="while.html">Sunglasses</a>
+                    <a href="while.html">Healthy Eyes</a>
+                    <a href="while.html">Contact Lenses</a>
+                    <a href="while.html">Eyeglasses - New</a>
+                    <a href="while.html">Reading Glasses</a>
+                </div>
+                <img src="https://cdn.bfldr.com/56O3HXZ9/at/qkk7hgg46w67stq685qmx9b/optical-lenses.jpg?auto=webp&format=jpg" alt="Optical">
+            </div>
+        </div>
+    
+        <div class="menu-item">
+            <a href="while.html">Sameday</a>
+            <div class="dropdown" style="margin-left: -95%;">
+                <h3>Quickest Delivery Same Day in Most Areas</h3>
+                <p>Prices and availability will vary.</p>
+                <button id="shop-sameday">Shop Same Day Now</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="subscription-wrapper">
+        <div class="subscription-header">
+            <h1>Be the First to Know - Subscribe to Quality Cart Emails</h1>
+            <p>Get the latest news, promotions, and exclusive deals from Quality Cart directly to your inbox.</p>
+        </div>
+
+        <div class="notice">
+            <span class="notice-icon">&#x2714;</span>
+            <span>Receive personalized announcements and recall information by providing your membership number and primary warehouse.</span>
+        </div>
+
+        <form>
+            <div class="input-group">
+                <label for="user-email">Email Address</label>
+                <input type="email" id="user-email" placeholder="Enter your email address" required>
+            </div>
+
+            <div class="input-group">
+                <label for="membership-number">Quality Cart Membership Number</label>
+                <input type="text" id="membership-number" placeholder="12-digit card number" required>
+            </div>
+
+            <div class="input-group">
+                <label for="warehouse-location">Your Quality Cart Warehouse</label>
+                <select id="warehouse-location">
+                    <option value="">Find the city of your warehouse...</option>
+                    <option value="new-york">New York</option>
+                    <option value="los-angeles">Los Angeles</option>
+                    <option value="chicago">Chicago</option>
+                    <option value="houston">Houston</option>
+                </select>
+            </div>
+
+            <div class="actions">
+                <button type="submit">Subscribe</button>
+            </div>
+        </form>
+    </div>
+
+
+    
+</body>
+<script src="./script/script.js"></script>
+</html>

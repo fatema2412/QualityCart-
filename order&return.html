@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/order&return.css">
+    <link rel="stylesheet" href="/style/createacc.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="logo-nav">
+        <div class="logo-container ">
+                <!-- Logo Section -->
+                <div id="logo" >
+                <h2>QualityCart</h2>
+                <h4 style="margin-top: -5% ;align-items: center;" >
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 5px;">
+    
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+                <span class="wholesale">Wholesale</span>
+            
+                </h4> 
+            </div> 
+        </div>
+    </div>
+
+    <h1 style="margin-top: 2%;">Order & Return</h1>
+    <div class="container">
+        <div class="section">
+            <h2>Track Your Order</h2>
+            <form class="order-form" id="trackOrderForm">
+                <input type="text" id="orderId" placeholder="Enter Order ID" >
+                <input type="email" id="email" placeholder="Enter Email Address" required>
+                <button type="submit">Track Order</button>
+            </form>
+        </div>
+    
+        <div class="section">
+            <h2>Return Your Item</h2>
+            <form class="order-form" id="returnForm">
+                <input type="text" id="returnOrderId" placeholder="Enter Order ID" required>
+                <textarea id="reason" placeholder="Reason for Return" rows="4" required></textarea>
+                <select id="returnReason">
+                    <option value="" disabled selected>Choose Reason for Return</option>
+                    <option value="damaged">Item Damaged</option>
+                    <option value="wrong">Wrong Item Sent</option>
+                    <option value="unwanted">No Longer Needed</option>
+                </select>
+                <button type="submit">Submit Return Request</button>
+            </form>
+        </div>
+    
+        <div class="section">
+            <h2>Return Policy</h2>
+            <div class="return-info">
+                <p>We strive to make returns as easy as possible for our customers. Please review our return policy below:</p>
+                <ul>
+                    <li>Items can be returned within 30 days of purchase.</li>
+                    <li>Items must be in original condition and packaging.</li>
+                    <li>Damaged or defective items will be replaced or refunded.</li>
+                    <li>Proof of purchase is required for all returns.</li>
+                </ul>
+                <p>If you have any questions, please contact our <a href="customersupp.html">customer support team</a>.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 QualityCart. All Rights Reserved.</p>
+    </footer>
+    
+    
+</body>
+<script src="./script/order&return.js"></script>
+</html>

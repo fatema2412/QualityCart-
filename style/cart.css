@@ -1,0 +1,118 @@
+.body {
+    background-color: #f9f9f9;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+#cart-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for individual cart items */
+.product-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-card:last-child {
+    border-bottom: none;
+}
+
+/* Item details styling */
+.product-card div {
+    flex: 1;
+}
+
+.product-card .item-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.product-card .item-quantity {
+    font-size: 1rem;
+    color: #666;
+}
+
+.product-card .item-price {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Buttons for quantity and removal */
+.product-card button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+    background-color: #0056b3;
+}
+
+.product-card.remove-button {
+    background-color: #dc3545;
+}
+
+.product-card.remove-button:hover {
+    background-color: #a71d2a;
+}
+
+.cart-summary {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.cart-summary .amount {
+    color: #28a745;
+}
+
+.cart-summary .item-count {
+    color: #17a2b8;
+}
+
+/* Payment button */
+#payment-button {
+    display: block;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 20px auto;
+    width: fit-content;
+    transition: background-color 0.3s;
+}
+
+#payment-button:hover {
+    background-color: #218838;
+}
+
+  
+  
+  

@@ -1,0 +1,714 @@
+/* Nav bar styling */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribute the space evenly */
+    margin: auto;
+    width: 70%;
+    gap: 40px;
+    padding: 10px 20px;
+    color: white
+}
+
+nav a {
+    font-size: 20px;
+    margin: 0 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+nav a:hover {
+    color: darkblue; /* Hover effect for links */
+}
+
+nav select {
+    border: none;
+    color: blue;
+    outline: none;
+    font-size: 16px;
+    padding: 5px;
+}
+
+nav select option:first-child {
+    color: black;
+}
+
+/* Logo styling */
+#logo{
+/* text-align: center; */
+font-family: 'Arial', sans-serif;
+color: rgb(230, 141, 141); /* Primary text color */
+margin: 20px 0;
+}
+#logo h2 {
+  font-size: 2.5rem;
+    font-style: italic; /* Makes "QualityCart" italic */
+    margin: 0;
+    color: #007bff;
+}
+#logo h4 div {
+  margin-top: 10px;
+}
+
+
+#logo h4 {
+    display: flex;
+    align-items: center; /* Aligns text and line vertically */
+    margin: 0;
+    gap: 2px;
+
+    margin-top: -1.5%;
+    margin-top: -10px; /* Adjust spacing */
+    font-size: 1.2rem;
+    color: rgb(168, 168, 242); /* Secondary text color */
+
+}
+.wholesale {
+  display: inline-block;
+  font-size: 1.5rem; /* Adjust for emphasis */
+  font-weight: bold; /* Make it stand out */
+  color: #ff5722; /* Vibrant color */
+    padding: 5px 10px;
+  margin-top: 10px;
+  font-style: italic; /* Makes "QualityCart" italic */
+
+}
+
+
+
+
+/* Horizontal lines for logo */
+.line {
+    display: inline-block;
+    width: 40px; /* Width of the horizontal line */
+    height: 5px; /* Thickness of the horizontal line */
+    background-color: rgb(112, 112, 243); /* Color of the line */
+   margin-left: 5px;
+    border-radius: 3px;
+}
+
+
+/* Search container */
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 150px;
+}
+
+input, button {
+  margin: 10px 0;
+  padding: 10px 15px; /* Comfortable click/tap area */
+}
+
+
+#search-input {
+    width: 50%;
+    padding: 10px 60px 10px 20px; 
+    font-size: 16px;
+    border: 2px solid gray;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#search-input:focus {
+    border-color: tomato;
+}
+
+.search-icon {
+    position: absolute;
+    left: 850px; 
+    font-size: 18px; 
+    color: gray;     pointer-events: none; /* Make sure the icon doesn't block input interaction */
+}
+
+/* Vertical line between links */
+.vert-line {
+    display: inline-block;
+    width: 2px;
+    height: 20px;
+    background-color: black;
+    margin-left: -1.2%;
+    vertical-align: middle;
+}
+#cart-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#cart-icon {
+  font-size: 18px;
+}
+
+#cart-count {
+  font-size: 14px;
+  color: gray;
+}
+
+/* General link styling */
+a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Menu bar styling */
+.menu-bar {
+    display: flex;
+    background-color: blue;
+    padding: 10px;
+    justify-content: space-around;
+    color: white;
+}
+
+/* Menu item styling */
+.menu-item {
+    position: relative;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 0 15px
+}
+
+.menu-item:hover {
+    background-color: darkblue;
+    border-radius: 5px;
+}
+
+.menu-item a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Dropdown menu styling */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    min-width: 300px;
+    color: black;
+    z-index: 10;
+}
+
+.menu-item:hover .dropdown {
+    display: block;
+}
+
+/* Dropdown select box */
+.dropdown select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.dropdown select:focus {
+    border-color: darkblue;
+}
+
+/* Dropdown image styling */
+.dropdown img {
+    max-width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Dropdown headings and text styling */
+.dropdown h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: black;
+}
+
+.dropdown p {
+    font-size: 14px;
+    margin: 5px 0 15px;
+    color: gray;
+}
+
+/* Dropdown button styling */
+.dropdown button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dropdown button:hover {
+    background-color: darkgreen;
+}
+
+/* Dropdown styling */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;  /* Position below the menu item */
+    left: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 15px;
+    min-width: 200px;  /* Ensure enough width for the dropdown */
+    color: black;
+    z-index: 10;  /* Ensure dropdown appears above other content */
+}
+
+.menu-item:hover .dropdown {
+    display: block;  /* Show dropdown on hover */
+}
+
+/* Style for each link inside the dropdown */
+.dropdown a {
+    color: black;  /* Change the link color */
+    text-decoration: none;  /* Remove underlines */
+    padding: 5px 10px;
+    display: block;  /* Make links block-level for better spacing */
+}
+
+.dropdown a:hover {
+    background-color: #f1f1f1;  /* Hover effect for links */
+}
+
+/* Optional: Style for select element inside dropdown */
+.dropdown select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.dropdown select:focus {
+    border-color: darkblue;
+}
+
+.dropdown img {
+    max-width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .footer-top div {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .footer-top h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-top input {
+    width: calc(100% - 50px);
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .footer-top button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #0055a6;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .column {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .column h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .column ul li {
+    margin-bottom: 5px;
+  }
+  
+  .column ul li a {
+    text-decoration: none;
+    color: #0055a6;
+  }
+  
+  .column ul li a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-legal {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .legal-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  
+  .legal-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #0055a6;
+  }
+  
+  .legal-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-icons {
+    margin: 10px 0;
+  }
+  
+  .social-icons a {
+    margin: 0 5px;
+    display: inline-block;
+  }
+  
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .copyright {
+    margin-top: 10px;
+  }
+  .multipic{
+
+    width: 100%;
+    height: 500px;
+    margin-top: 3%;
+    /* margin-left: 15%; */
+    margin-bottom: 5%;
+    /* position: absolute; */
+    /* transform: translate(-50%,-50%); */
+    background-image: url("https://cdn.bfldr.com/56O3HXZ9/at/jgwjcqm3c6vmmf67zv36kqr/d_25w05001_hero_bmas_apparel.jpg?auto=webp&format=jpg");
+    background-size: 100% 100%;
+    animation: slider 20s infinite linear;
+    cursor: pointer;
+    
+    
+    }
+    @keyframes slider  {
+    0%{  background-image: url("https://cdn.bfldr.com/56O3HXZ9/at/jgwjcqm3c6vmmf67zv36kqr/d_25w05001_hero_bmas_apparel.jpg?auto=webp&format=jpg");}
+    35%{ background-image: url("https://cdn.bfldr.com/56O3HXZ9/at/t6fck94v8vwks2b5j2gqfxn/d_25w05003_hero_feelgood.jpg?auto=webp&format=jpg");}
+    75%{ background-image: url("https://cdn.bfldr.com/56O3HXZ9/at/7cb3vtkss4q6876vmv57hbrt/d_25w03347_hero_jan_mvm_tires.jpg?auto=webp&format=jpg");}
+    
+    } 
+body{
+    min-height: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333; /* Neutral dark text */
+    line-height: 1.6; /* Improve readability */
+  
+}
+    /* Content Stlyling */
+
+    #content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 10px;
+      }
+      
+      /* Product Card Styling */
+      /* Product image styling */
+      product-images {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-bottom: 10px;
+      }
+      
+      /* Styling for Each Image */
+      .product-image {
+        width: 100px; /* Adjust size as necessary */
+        height: auto;
+        border-radius: 8px;
+    }
+
+      .product {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        /* border-radius: 8px; */
+        padding: 15px;
+        max-width: 250px;
+        text-align: center;
+        /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+        transition: transform 0.3s ease;
+      }
+      
+      .product:hover {
+        transform: scale(1.05);
+      }
+      
+      .product h3 {
+        color: #333;
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+      }
+      
+      .product p {
+        color: #555;
+        margin: 5px 0;
+        font-size: 0.9rem;
+      }
+
+      
+      /* Button Container Styling */
+      .button-container {
+        margin-top: 15px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+      }
+      
+      /* Fancy Button Styling */
+      .fancy-button {
+        padding: 8px 15px;
+        border: none;
+        border-radius: 5px;
+        background: linear-gradient(135deg, #6e8efb, #a777e3);
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+      
+      .fancy-button:hover {
+        background: linear-gradient(135deg, #a777e3, #6e8efb);
+      }
+      
+      /* Members Only Section Styling */
+      .fancy-text {
+        margin-top: 10px;
+        font-size: 1rem;
+        font-family: "Courier New", Courier, monospace;
+        color: #ff6347;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      .product-image {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      } 
+      .image-container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        gap: 20px; 
+        margin: 20px 0;
+        height: 500px;
+        margin-bottom: 5%;
+      }
+      
+      /* Styling for each image */
+      .image-item {
+        width: 100%;  
+        height: 100%; 
+     object-fit: cover; /* Ensures the image covers the div without stretching */
+        border-radius: 8px; 
+      } 
+          /*Moving Image  */
+          .moving{
+            position: relative;
+            width: 1300px; 
+            /* height: 400px; */
+            margin: 0 auto; 
+            overflow: hidden;
+            border-radius: 15px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+          
+          }
+          #moving-image{
+            width: 100%;
+            height:100%;
+           border-radius: 15px;
+           object-fit: cover;
+          }
+
+          .moving-button:hover {
+            background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+          }
+          
+          /* Positioning left button (<) */
+          .moving_left {
+            left: 8px;
+          }
+          
+          /* Positioning right button (>) */
+          .moving_right{
+            right: 8px; 
+          }
+          .movbut{
+            position: absolute;
+            top: 50%;
+            background-color: rgba(0, 0, 0, 0.5); 
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px; 
+            height: 50px; 
+            font-size: 24px; 
+           font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 10; /* Ensure it’s above the image */
+          }
+          
+
+          /* Container styles */
+          .container {
+            display: flex;
+            gap: 20px;
+            margin-top: 5%;
+          }
+          .left-menu p{
+            font-size: 20px;
+          }
+          .left-menu {
+            width: 30%;
+            background: #f8f8f8;
+            padding: 20px;
+          }
+          
+          .left-menu ul {
+            list-style-type: none;
+            padding: 0;
+          }
+          
+          .left-menu li {
+            padding: 10px;
+            cursor: pointer;
+            font-size: 24px;
+            font-weight: bolder;
+          }
+          
+          .left-menu li:hover {
+            background-color: blue;
+          }
+          
+          .content {
+            width: 70%;
+            padding: 20px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            text-align: center;
+          }
+          
+          .content img {
+            max-width: 100%;
+            margin-bottom: 20px;
+          }
+          
+          #content-title {
+            font-size: 24px; 
+            font-weight: bold; 
+            color: #464545; 
+            /* margin-bottom: 15px;  */
+          }
+      
+          #content-image {
+            width: 100%;
+            max-width: 500px;
+            /* height: auto;  */
+            border-radius: 4px; 
+            margin: 15px 0; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+          }
+          
+          #content-description {
+            font-size: 20px;
+            color: #555; 
+            line-height: 1.6;
+            margin: 0;
+          }
+          
+          
+          .highlight {
+            font-weight: bold;
+            text-decoration: underline;
+            color: red;
+          }
+          .content-button {
+            background-color: #0071c5; 
+            color: #fff; 
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            
+          }
+          
+          .content-button:hover {
+            background-color: #005a9c; 
+          }
+          
+          

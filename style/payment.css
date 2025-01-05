@@ -1,0 +1,183 @@
+.div60 {
+    width: 98%;
+    height: 2100px;
+     /* border: 1px solid black; */
+    background-color: rgba(199, 188, 188, 0);
+    margin: 20px;
+  
+  }
+  .express{
+    text-align: center;
+    font-size: 24px;
+    margin-top: 2%;
+    letter-spacing: 1.5px;
+  }
+  .topimg{
+    width: 550px;
+    /* border: 1px solid black; */
+    height: 70px;
+    justify-content: space-between;
+    display: flex;
+    margin-left: 30%;
+    gap: 10PX;
+  }
+  .topimg div{
+    /* border: 1px solid black; */
+    height: 100%;
+    width: 150px;
+  }
+  .topimg div img{
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid black; */
+  }
+   .halfline{
+    width: 38%; /* Full width */
+      height: 1px; /* Thickness of the horizontal line */
+      background-color: rgb(199, 198, 198); /* Line color */
+      margin-right: 1%;
+      margin-top: 3.5%;
+   }
+  .linediv{
+    display: flex;
+    margin-left: 8%;
+    /* margin-right: 2%; */
+    margin-bottom: 5%;
+    
+  }         
+   .formlabel{
+       font-size: 20px;
+        font-weight: bolder;
+        font-family: Futura,sans-serif;
+         color: #555454; /* Placeholder text color */
+        letter-spacing: 0.5px;
+        margin-left: 15%;
+        border-radius: 100%;
+                 
+      }
+      .frmsp{
+                  position: relative;
+                  left: 390px;
+                  letter-spacing: 0.5px;
+                font-size: 16px;
+                color: rgb(154, 158, 221);
+              }
+             #forminput2{
+              /* width: 400%; */
+              margin-left: 15%;
+              margin-top: 2%;
+                  height: 50px;
+                  padding-left: 10px; /* Add padding to the left of the input field */
+            font-size: 15px;
+              }
+              #forminpu{
+             margin-top: 4%;
+             margin-left: 2%;
+             height: 45px;
+             padding-left: 10px;
+  
+  
+              }
+            
+              .formcheckbox{
+                  width:100px;
+                  margin-top:2% ;
+                  height: 18px;
+                  margin-left: 12%;
+                }
+              .formspan{
+                  margin-top: -5%;
+                  font-size: 18PX;
+                  margin-left: -3%;
+                  letter-spacing: 0.5px;
+          
+              }
+              .creditcard{
+                border: 1px solid black;
+                height: 45px;
+                width: 82%;
+                margin-left: 15%;
+               padding: 10px;
+                margin-top: 2%;
+                align-items: center;
+                display: flex;
+                gap: 10px;
+              }
+              .bluecircle{
+                /* border: 1px solid black; */
+                background-color: rgb(163, 163, 234);
+                border-radius: 100%;
+                height: 15px;
+                width: 15px;
+              }
+            .creditcardtext{
+              font-size: 18px;
+            }  
+   .spacecredit{
+    width: 85px;
+    height: 100%;
+    /* border: 1px solid black; */
+   }
+   .carddiv{
+    /* border: 1px solid black; */
+    width: 50px;
+    height: 90%;
+  
+   }
+   .carddiv img{
+    height: 100%;
+    width: 100%;
+   }
+   .detailcard{
+    border: 1px solid black;
+    height: 270px;
+    width: 540px;
+    margin-left: 15%;
+    background-color: #eee9e9;
+    }
+    .shopdiv{
+      height: 50px;
+      width: 540px;
+      margin-left: 15%;
+      border: 1px solid black;
+      display: flex;
+      align-items: center;
+    }
+    .shopdivpay { height: 100%; width: 40px; margin-left: 3%;}
+    .shopdivpay img{
+     height:100%;
+     width: 100%; 
+    }
+    .shopline{
+      height: 20px;
+      width: 2px;
+    border: 1px solid black;
+    margin-left:2% ;
+    background-color: #555454;
+    }
+    .lock{
+      height: 18px;
+      width: 18px;
+      /* border: 1px solid black; */
+      margin-left: 15%;
+      margin-top: 2%;
+    }
+    .lock img{
+      height: 95%;
+      width: 100%;
+      /* margin-left: 3%; */
+    }
+    .secure{
+      font-size: 13px;
+      margin-top: 2.5%;
+      margin-left: 3%;
+    }
+    .paynow{
+      /* margin-left: %; */
+      background-color: rgb(67, 67, 234);
+      color: white;
+      height: 60px;
+      width: 540px;
+      margin-top: 10%;
+      font-size: 18px;
+    }

@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+.subscription-wrapper {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+.subscription-header {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.subscription-header h1 {
+    font-size: 1.8rem;
+    color: #333;
+}
+.subscription-header p {
+    color: #555;
+    font-size: 0.9rem;
+}
+.input-group {
+    margin-bottom: 1rem;
+}
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+.notice {
+    background: #f0f9f5;
+    color: #317a3e;
+    padding: 0.8rem;
+    border: 1px solid #317a3e;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.notice-icon {
+    font-size: 1.2rem;
+}
+.actions {
+    text-align: center;
+}
+.actions button {
+    background: #0056a8;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.actions button:hover {
+    background: #003d75;
+}

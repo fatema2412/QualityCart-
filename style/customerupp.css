@@ -1,0 +1,95 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-family: Arial, sans-serif;
+}
+
+#container {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Existing Image Grid */
+#div {
+  width: 28%; /* Adjusted to fit alongside Featured Articles */
+  background-color: rgb(237, 229, 229);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 30px;
+  /* border: 1px solid black; */
+}
+
+#div div {
+  text-align: center;
+}
+
+#div img {
+  width: 70%;
+  height: auto;
+}
+
+#div a {
+  display: block;
+  margin-top: 5px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+#div a:hover {
+  color: blue;
+}
+
+/* Featured Articles Section */
+#featured {
+  width: 60%; /* Adjusted width for balance */
+  display: flex;
+  flex-direction: column;
+  /* background-color: rgb(240, 240, 240); */
+  /* border: 1px solid #ccc; */
+  padding: 50px;
+}
+
+#featured h2 ,.trend {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  width: 90%;
+  margin:  auto 20px;
+}
+
+#featured p {
+  margin: 20px 0;
+  text-align: justify;
+  font-size: 20px;
+}
+
+#featured a {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: blue;
+  font-size: 20px;
+  width: 75%;
+  line-height: 30px;
+}
+
+#featured a:hover {
+  text-decoration: underline;
+}
+
+#featured img {
+  width: 200px;
+  height: 150px;
+  margin-top: -60px;
+  align-self: flex-end;
+}
+.trend{
+  margin-top: 10%;
+}
+
