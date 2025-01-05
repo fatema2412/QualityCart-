@@ -2,9 +2,7 @@
     try{
  let res = await fetch("https://understood-steel-touch.glitch.me/products",{
     method:"GET",
-    headers:{
-        "content-type":"application/json"
-    },
+
 })
     let data = await res.json()
     console.log(data);
@@ -16,7 +14,7 @@ catch(err){
  
 
 }
-load()
+
 // cart logic 
 document.addEventListener("DOMContentLoaded", () => {
   const cartLink = document.getElementById("cart-link");
@@ -40,28 +38,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-load()
+window.onload = load;
 
 
 
-function displayData(arr) {
-    let cont = document.getElementById("content"); 
+
+function displayData(data) {
+    let cont = document.getElementById("gliproduct"); 
     cont.innerHTML = "";
-    arr. forEach((product) => {
+    data.forEach((product) => {
         let card = document.createElement("div");
     card.classList.add("product");
 
 
        let imgContainer = document.createElement("div");
         imgContainer.classList.add("product-images");
-        product.images.forEach((image) => {
+        console.log( typeof product.image)
+        product.image.forEach((image) => {
             let img = document.createElement("img");
           img.src = image;
           img.alt = `${product.name}`
           img.classList.add("product-image");
           imgContainer.appendChild(img);
         });
-
+    
     
 
     
@@ -236,6 +236,6 @@ document.querySelectorAll(".left-menu li").forEach((item) => {
  })
 
 
-document.querySelector(".button-container").addEventListener("click", () => {
-  window.location.href = "while.html";
-});
+// document.querySelector(".button-container").addEventListener("click", () => {
+//   window.location.href = "while.html";
+// });

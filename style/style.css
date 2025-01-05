@@ -458,7 +458,7 @@ body{
 }
     /* Content Stlyling */
 
-    #content {
+    #gliproduct {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
@@ -617,12 +617,13 @@ body{
             z-index: 10; /* Ensure it’s above the image */
           }
           
-
+          
           /* Container styles */
           .container {
             display: flex;
             gap: 20px;
             margin-top: 5%;
+            margin-bottom: 8%;
           }
           .left-menu p{
             font-size: 20px;

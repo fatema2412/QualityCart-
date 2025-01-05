@@ -79,7 +79,7 @@ function displayData(data) {
         productRating.innerHTML = `${generateStars(product.rating)}`;
 
         const productDelivery = document.createElement("p");
-        productDelivery.innerHTML =  product.delivery === 'Available' ? 'delivery-available' : 'delivery-out';
+        productDelivery.innerHTML =  product.delivery === 'Available' ? 'Delivery-available' : 'Delivery-out';
         productDelivery.className =
         product.delivery === "Available" ? "delivery-available" : "delivery-out";
         
