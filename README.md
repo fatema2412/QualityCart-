@@ -51,6 +51,8 @@ To run the project:
 [Homepage Features](./screenshot/image1.jpg.JPG)
 [Homepage Features](./screenshot/image2.jpg.JPG)
 [Homepage Features](./screenshot/image3.jpg.JPG)
+[Homepage Features](/screenshot/image4.jpg)
+[Homepage Features](./screenshot/image5.jpg)
 
 ---
 
